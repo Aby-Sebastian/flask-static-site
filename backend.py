@@ -22,6 +22,7 @@ mycursor = mydb.cursor()
 def index():
 	if request.method == 'POST':
 		data = request.form['id_email'] #data collects from html form 
+		mycursor.execute("CREATE TABLE IF NOT EXISTS UserEmails(id INT PRIMARY KEY NOT NULL auto_increment, emails VARCHAR(50) NOT NULL)")
 		mycursor.execute("INSERT INTO UserEmails(emails) VALUES (%s)",(data,)) # collected data gets inserted
 		mydb.commit()
 		return render_template('Opnlabs.html')
