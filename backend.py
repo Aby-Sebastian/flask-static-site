@@ -11,11 +11,14 @@ mydb = mysql.connector.connect(
   host="localhost",
   user="root",
   passwd="",
-  database='opnlabs'
+  
 )
-print('database connected')
+print('localhost connected')
 print(mydb) 
 mycursor = mydb.cursor()
+mycursor.execute("CREATE DATABASE IF NOT EXISTS opnlabs")
+mycursor.execute("USE opnlabs")
+print('database connected')
 
 #data insertion
 @app.route('/', methods=['GET', 'POST'])
