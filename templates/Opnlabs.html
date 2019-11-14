@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="OpnLabs">
+  <meta name="description" content="Web Accessibilty">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    OpnLabs - Leading Experts in Web Accessibilty
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Signika:600,700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <a href="#maincontent" id="skip">Skip to main</a>
+
+  <div class="container">
+
+    <div class="mainlogo"><a href="{{ url_for('home') }}"><img src="/static/images/Opnlogo.png" alt="OpnLabs Logo"></a></div>
+    <div class="mainheader">
+      <h1><a href="{{ url_for('home') }}">OpnLabs</a></h1>
+    </div>
+    <div class="mainnavigation">
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('services') }}">Services</a></li>
+          <li><a href="{{ url_for('research') }}">Research </a></li>
+          <li><a href="{{ url_for('resources') }}">Resources </a></li>
+          <li><a href="{{ url_for('contact') }}">Contact Us </a></li>
+          <li><a href="{{ url_for('about') }}">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <main id="maincontent">
+      <p class="mainquote" tabindex="0">We help in-house teams make websites and mobile applications accessible to people with disabilities.</p>
+    </main>
+    <div class="imagediv">
+      <img class="picicons" src="/static/images/image (2).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (12).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (14).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/uber-logo-square-square.jpg" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/images.png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/unnamed.jpg" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (11).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (1).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (3).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (4).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (5).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (6).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (7).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (8).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (9).png" alt="picture symbol" tabindex="0">
+      <img class="picicons" src="/static/images/image (13).png" alt="picture symbol" tabindex="0">
+    </div>
+
+
+    <p class="simpleexplanation" tabindex="0">Simply put,<span class="strong2"> Web accessibility</span>
+      is the inclusive practice of ensuring there are no barriers that prevent interaction with,
+      or access to, websites on the World Wide Web by people with physical disabilities, situational disabilities,
+      and socio-economic restrictions on bandwidth and speed.
+      If you need help making your website accessible or find out accessible issues within
+      an existing one, we’d love to talk with you about how we can help.</p>
+
+    <div class="articles">
+      <p id="article_one" tabindex="0"><strong class="strong1">Glossary </strong>
+        The words we use when we talk about accessibility.</p>
+      <p id="article_two" tabindex="0"><strong class="strong1">Talks </strong>
+        Videos and slide decks from conference talks about web accessibility.</p>
+      <p id="article_three" tabindex="0"><strong class="strong1">Articles </strong>
+        Curl up with a cozy tablet and read about our favorite subject.</p>
+    </div>
+
+
+    <div class="form1">
+      <p class="subscribe" tabindex="0"><span class="strong0">Subscribe to the OpnLabs newsletter</span> for infrequent, plain-text emails about our latest work and goings-on.
+      </p>
+      <form method="POST" action="">
+        <label for="email_id">Email address</label><br>
+        <input id="email_id" name="id_email" type="email" placeholder=" Your Email address">
+        <input id="signup_button" type="submit" value="Sign Up">
+      </form>
+    </div>
+
+    <footer>&copy 2012-2019 OpnLabs. All Rights Reserved. Privacy Policy</footer>
+
+  </div>
+
+</body>
+
+</html>

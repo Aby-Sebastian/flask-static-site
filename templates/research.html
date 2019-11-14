@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="OpnLabs">
+  <meta name="description" content="Web Accessibilty">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    OpnLabs - Leading Experts in Web Accessibilty
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Signika:600,700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+  <a href="#maincontent">Skip to main</a>
+  <div class="container">
+
+    <div class="mainlogo"><a href="{{ url_for('home') }}"><img src="/static/images/Opnlogo.png" alt="OpnLabs Logo"></a></div>
+    <div class="mainheader">
+      <h1><a href="{{ url_for('home') }}">OpnLabs</a></h1>
+    </div>
+    <div class="mainnavigation">
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('services') }}">Services</a></li>
+          <li><a href="{{ url_for('research') }}">Research </a></li>
+          <li><a href="{{ url_for('resources') }}">Resources </a></li>
+          <li><a href="{{ url_for('contact') }}">Contact Us </a></li>
+          <li><a href="{{ url_for('about') }}">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+</body>
+
+</html>
