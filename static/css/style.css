@@ -77,6 +77,10 @@ p {
   align-self: center;
 }
 
+.mainnavigation nav ul{
+  display: flex;
+}
+
 main {
   grid-column: 2/-1;
   grid-row-start: 3;
