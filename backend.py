@@ -47,7 +47,9 @@ def services():
 
 @app.route('/research')
 def research():
-	return render_template('research.html')
+	mycursor.execute("SELECT * FROM UserEmails")
+	data = mycursor.fetchall()
+	return render_template('research.html', data=data)
 
 @app.route('/resources')
 def resources():

@@ -12,10 +12,15 @@ img {
   max-width: 2.1875em;
 }
 
+main > table>td{
+  width: 40%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 
 li {
   list-style: none;
